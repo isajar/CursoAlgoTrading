@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Nov 19 11:09:00 2020
+
+@author: isajarspector
+"""
+
+from __future__ import print_function
+
+from thinkbayes import Suite
+
+class Dado(Suite):
+    
+    def Likelihood(self,data,hypo):
+        
+        # si el dado tiene menos lados que el dato entonce P(D|H)=0
+        if(hypo < data):
+            return 0
+        else:
+            # la propabilida del dato para ese dado el 1 sobre la cantidad de lados.
+            return 1/hypo
+        
+        
+        
+        
+    
+def main():
+    # las hipotesis son los dados representados por su numero de lados.
+    suite = Dado([4,6,8,12,20])
+    # salio el 6, quiero ver las probilidades de cada dado.
+    suite.Update(9)
+    suite.Print()
+    
+    # ahora realizo una secuencia de tiradas y veo que numeros salen. En base a eso actualizo las propabilidades de mis hipotesis
+    tiradas = [4,6,2,5,5,1,3]
+    for tirada in tiradas:
+        suite.Update(tirada)
+    print("con esta tirada %s las probabilidades quedan: " %(str(tiradas)))
+    suite.Print()
+
+if __name__ == '__main__':
+    main()
+    

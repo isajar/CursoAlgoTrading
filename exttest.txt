@@ -1,0 +1,27 @@
+
+[1] "SUBE:  0.527400641283524"
+[1] "BAJA:  0.472598309815927"
+
+[1] "mejor opcion >>> SUBE"
+
+
+           rsi_2 rsi_7 rsi_14 rsi_21 stratmacd
+2020-10-09    47    65     61     59         0
+
+           Open High  Low Close  Volume Adjusted
+2020-10-07 53.9 54.9 53.1  54.0 1833767     54.0
+2020-10-08 54.8 55.0 51.7  53.0  951771     53.0
+2020-10-09 53.0 54.0 52.0  52.8  640395     52.8
+
+
+
+           Volume Adjusted rsi_2 rsi_7 rsi_14 rsi_21 stratmacd Price_Lagged SUBE BAJA
+2020-10-09 640395     52.8    47    65     61     59         0           NA   NA   NA
+
+           rsi_2 rsi_7 rsi_14 rsi_21 stratmacd
+2020-10-09    47    65     61     59         0
+
+           Open High  Low Close  Volume Adjusted
+2020-10-07 53.9 54.9 53.1  54.0 1833767     54.0
+2020-10-08 54.8 55.0 51.7  53.0  951771     53.0
+2020-10-09 53.0 54.0 52.0  52.8  640395     52.8
